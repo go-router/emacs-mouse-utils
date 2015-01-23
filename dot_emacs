@@ -1,0 +1,9 @@
+
+(setq load-path (cons "~/emacs_packages/mouse-utils" load-path))
+
+(require 'mouse-utilities)
+;; keybindings for mouse events
+(define-key global-map [S-down-mouse-1] 'move-text-around)
+(define-key global-map [S-drag-mouse-2] 'dragdrop-exchange-buffer)
+(define-key global-map [C-down-mouse-1] 'change-window-size)
+
