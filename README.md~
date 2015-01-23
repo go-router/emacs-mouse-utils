@@ -23,10 +23,9 @@ in .emacs as documented in dot_emacs. Add key bindings similar to the following:
 	* release <mouse-2> at target window;
 	* source window and target window will exchange contents.
 
-* Change window size by mouse:
-
-	* (define-key global-map [C-down-mouse-1] 'change-window-size)
-	* move cursor into target window and select it;
-	* hold down <Ctrl>, press down <mouse-1> and move mouse;
-	* target window will resize according to the directions of mouse movement;
-	* other windows will resize automatically to accommodate target window size change.
+* Change window size by mouse
+	(define-key global-map [C-down-mouse-1] 'change-window-size)
+	move cursor into target window and select it;
+	hold down <Ctrl>, press down <mouse-1> and move mouse;
+	target window will resize according to the directions of mouse movement;
+	other windows will resize automatically to accommodate target window size change.
