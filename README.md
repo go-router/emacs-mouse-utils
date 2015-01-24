@@ -2,7 +2,7 @@ Emacs mouse utils
 =================
 
 A small emacs elisp util allows you manipulate emacs buffers and windows using mouse.
-Here is a screencast for its usage.
+Here is a screencast for its usage: http://youtu.be/rKSmzNG2i1w .
 
 Copy mouse-utils directory to your local emacs packages. Add its path to "load-path" 
 in .emacs as documented in dot_emacs. Add key bindings similar to the following:
