@@ -31,6 +31,12 @@
 	(delta-x 0) (delta-y 0)
 	)
     (track-mouse;; start tracking mouse
+      ;; turn off auto-hscroll-mode to avoid interfering horizontal moves
+      (setq auto-hscroll-flag nil)
+      (when auto-hscroll-mode
+        (setq auto-hscroll-flag t)
+        (setq auto-hscroll-mode nil)
+        )
       ;; read the next event, if it is not mouse movement, quit
       (while (mouse-movement-p (setq new-event (read-event)))
 	(setq curr-pos (posn-col-row (event-start new-event)))
@@ -52,6 +58,10 @@
 	      )
 	  )
 	)
+      ;;restore auto-hscroll-mode
+      (if auto-hscroll-flag
+          (setq auto-hscroll-mode t)
+        )
       )
     )
   )

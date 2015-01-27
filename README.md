@@ -13,7 +13,6 @@ in .emacs as documented in dot_emacs. Add key bindings similar to the following:
 	* click anywhere inside target window; 
 	* hold down [Shift], press down [mouse-1] and move mouse inside window; 
 	* the content of window will follow cursor; 
-	* [if buffer has text auto-wrapped, the move to left/right will not have effect.]
 
 * DragDrop to exchange windows' content:
 
